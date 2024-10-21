@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.link {
+  color: #88c057;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: #f4a261;;
+}
+
+button {
+  background-color: #6ad40e; /* Forest green background */
+  /* color: #fff; */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #f4a261;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #f5f5f5; /* Light headers */
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #f5f5f5;
+  padding: 40px 0;
+}
+
+/* Other UI elements */
+.card {
+  background-color: #262626; /* Slightly lighter background for cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  background-color: #333;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #88c057;
+  border-radius: 5px;
+}
