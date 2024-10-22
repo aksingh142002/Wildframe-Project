@@ -23,7 +23,7 @@ const Header = () => {
   // };
 
   return (
-    <header className=" text-white py-4 px-8 flex justify-between items-center fixed  w-full">
+    <header className=" text-white py-4 px-8 flex justify-between items-center fixed z-1  w-full">
       {/* Logo */}
       <div className="flex items-center">
         <Image src="/logo.png" alt="wildframeLogo" width={50} height={50} />

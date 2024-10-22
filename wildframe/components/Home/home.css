@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 150px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 900px;
+  align-self: center;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+  text-wrap: balance;
+  align-self: center;
+  width: 700px;
+}
+
+.hero .btn-container {
+  margin-top: 40px;
+}
+
+.hero .btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0d0d0d;
+  background-color: #c6ff00;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hero .btn:hover {
+  background-color: #a3db00;
+  transform: translateY(-5px);
+}
+
+/* Animated Background Icons */
+.animated-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.animated-icon {
+  position: absolute;
+  animation: float 10s infinite ease-in-out;
+}
+
+.animated-icon:nth-child(1) {
+  top: 40%;
+  left: 20%;
+  width: 60px;
+}
+
+.animated-icon:nth-child(2) {
+  bottom: 30%;
+  right: 20%;
+  width: 40px;
+}
+
+.animated-icon:nth-child(3) {
+  top: 50%;
+  left: 45%;
+  width: 80px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
